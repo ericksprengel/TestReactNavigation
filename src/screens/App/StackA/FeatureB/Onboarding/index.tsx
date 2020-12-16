@@ -1,13 +1,13 @@
 import React from 'react';
 import AppScreen from '../../../../../helpers/AppScreen';
-import {SkyScreenNavigationProp} from '../ParamList';
+import {FeatureBScreenNavigationProp} from '../ParamList';
 
 export interface OnboardingScreenProps {
-  navigation: SkyScreenNavigationProp;
+  navigation: FeatureBScreenNavigationProp;
 }
 
 const OnboardingScreen = ({navigation}: OnboardingScreenProps) => (
-  <AppScreen name="ExtraMoney - Ton - Onboarding" navigation={navigation} />
+  <AppScreen name="StackA - FeatureC - Onboarding" navigation={navigation} />
 );
 
 export default OnboardingScreen;

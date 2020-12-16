@@ -1,33 +1,33 @@
 const routes = {
   App: {
-    itself: 'App' as const,
-    ExtraMoney: {
-      itself: 'App.ExtraMoney' as const,
-      Pier: 'App.ExtraMoney.Pier' as const,
-      Sky: {
-        itself: 'App.ExtraMoney.Sky' as const,
-        Onboarding: 'App.ExtraMoney.Sky.Onboarding' as const,
-        EmailInput: 'App.ExtraMoney.Sky.EmailInput' as const,
+    itself: 'App',
+    StackA: {
+      itself: 'App.StackA',
+      FeatureA: 'App.StackA.FeatureA',
+      FeatureB: {
+        itself: 'App.StackA.FeatureB',
+        Onboarding: 'App.StackA.FeatureB.Onboarding',
+        EmailInput: 'App.StackA.FeatureB.EmailInput',
       },
-      Ton: {
-        itself: 'App.ExtraMoney.Ton' as const,
-        Onboarding: 'App.ExtraMoney.Ton.Onboarding' as const,
-        ProductList: 'App.ExtraMoney.Ton.ProductList' as const,
+      FeatureC: {
+        itself: 'App.StackA.FeatureC',
+        Onboarding: 'App.StackA.FeatureC.Onboarding',
+        ProductList: 'App.StackA.FeatureC.ProductList',
       },
     },
-    Home: 'App.Home' as const,
+    Home: 'App.Home',
   },
-};
+} as const;
 
 export const ROUTE_LIST = [
-  routes.App.ExtraMoney.itself,
-  routes.App.ExtraMoney.Pier,
-  routes.App.ExtraMoney.Sky.itself,
-  routes.App.ExtraMoney.Sky.Onboarding,
-  routes.App.ExtraMoney.Sky.EmailInput,
-  routes.App.ExtraMoney.Ton.itself,
-  routes.App.ExtraMoney.Ton.Onboarding,
-  routes.App.ExtraMoney.Ton.ProductList,
+  routes.App.StackA.itself,
+  routes.App.StackA.FeatureA,
+  routes.App.StackA.FeatureB.itself,
+  routes.App.StackA.FeatureB.Onboarding,
+  routes.App.StackA.FeatureB.EmailInput,
+  routes.App.StackA.FeatureC.itself,
+  routes.App.StackA.FeatureC.Onboarding,
+  routes.App.StackA.FeatureC.ProductList,
   routes.App.Home,
 ];
 

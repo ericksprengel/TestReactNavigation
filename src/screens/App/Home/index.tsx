@@ -12,11 +12,13 @@ const HomeScreen = ({navigation}: HomeScreenProps) => (
     name="Home"
     navigation={navigation}
     onCustomAction={() => {
-      navigation.push(routes.App.ExtraMoney.itself, {
-        screen: routes.App.ExtraMoney.Ton.itself,
+      navigation.push(routes.App.StackA.itself, {
+        screen: routes.App.StackA.FeatureC.itself,
         params: {
-          screen: routes.App.ExtraMoney.Ton.ProductList,
-          params: {title: 'eita'},
+          screen: routes.App.StackA.FeatureC.ProductList,
+          params: {
+            title: 'asd',
+          },
         },
       });
     }}

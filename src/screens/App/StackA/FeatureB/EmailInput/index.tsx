@@ -5,13 +5,13 @@ import {EmailInputScreenProps} from '../ParamList';
 
 const EmailInputScreen = ({route, navigation}: EmailInputScreenProps) => (
   <AppScreen
-    name={`ExtraMoney - Sky - EmailInput - ${route.params.email}`}
+    name={`StackA - FeatureB - EmailInput - ${route.params.email}`}
     navigation={navigation}
     onCustomAction={() => {
-      navigation.push(routes.App.ExtraMoney.Ton.itself, {
-        screen: routes.App.ExtraMoney.Ton.ProductList,
+      navigation.push(routes.App.StackA.FeatureC.itself, {
+        screen: routes.App.StackA.FeatureC.ProductList,
         params: {
-          title: 'Title from the Sky',
+          title: 'Title from the FeatureB',
         },
       });
     }}

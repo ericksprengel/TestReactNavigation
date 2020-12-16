@@ -1,21 +1,21 @@
 import React from 'react';
 import AppScreen from '../../../../../helpers/AppScreen';
 import routes from '../../../../../helpers/routes';
-import {TonScreenNavigationProp} from '../ParamList';
+import {FeatureCScreenNavigationProp} from '../ParamList';
 
 export interface OnboardingScreenProps {
-  navigation: TonScreenNavigationProp;
+  navigation: FeatureCScreenNavigationProp;
 }
 
 const OnboardingScreen = ({navigation}: OnboardingScreenProps) => (
   <AppScreen
-    name="ExtraMoney - Ton - Onboarding"
+    name="StackA - FeatureC - Onboarding"
     navigation={navigation}
     onCustomAction={() => {
-      navigation.navigate(routes.App.ExtraMoney.Sky.itself, {
-        screen: routes.App.ExtraMoney.Sky.EmailInput,
+      navigation.navigate(routes.App.StackA.FeatureB.itself, {
+        screen: routes.App.StackA.FeatureB.EmailInput,
         params: {
-          email: 'onboarding@ton.com.br',
+          email: 'onboarding@FeatureC.com.br',
         },
       });
     }}

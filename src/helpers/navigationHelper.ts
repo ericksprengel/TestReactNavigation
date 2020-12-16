@@ -45,7 +45,7 @@ console.log(
   JSON.stringify(
     getNavigationSubScreenParams(
       'App',
-      'ExtraMoney.Page01.Page01_02'.split('.'),
+      'StackA.Page01.Page01_02'.split('.'),
     ),
   ),
 );
